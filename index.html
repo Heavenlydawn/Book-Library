@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Log</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="container">
+      <div class="container">
+        <h1>BOOK LIBRARY</h1>
+
+        <div class="form-container">
+          <form>
+            <label for="Book name"> Book Name </label>
+            <br />
+            <input class="BookDetails" type="text" />
+            <br />
+
+            <label for="Author"> Author's Name </label>
+            <br />
+            <input class="BookDetails" type="text" />
+            <br />
+
+            <label for="Genre"> Genre </label>
+            <br />
+            <input class="BookDetails" type="text" />
+            <br />
+
+            <label for="Year Published"> Year Published </label>
+            <br />
+            <input class="BookDetails" type="text" />
+            <br />
+
+            
+            <div id="add">
+                <input class="add" type="text" value ="Add Book" readonly />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="tableContainer">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Name</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Year Published</th>
+                        <th class="edit">Edit</th>
+                        <th class="delete">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="BookLog">
+                    <td class=" BookInfo "></td>
+                    <td class=" BookInfo "></td>
+                    <td class=" BookInfo "></td>
+                    <td class=" BookInfo "></td>
+                    <td class=" BookInfo "></td>
+                    <td class=" BookInfo "></td>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
